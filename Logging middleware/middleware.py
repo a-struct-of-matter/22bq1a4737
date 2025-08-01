@@ -22,11 +22,5 @@ def log_middleware(func):
             raise
     return wrapper
 
-# Example usage:
-@log_middleware
-def example_function(x, y):
-    return x / y
+#now functions can be decorated with @log_middleware to log their calls
 
-# Uncomment below lines to test
-# example_function(10, 2)
-# example_function(10, 0)
