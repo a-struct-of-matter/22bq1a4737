@@ -11,14 +11,16 @@ To Test the app you can use curl operations
 
 run django server
 
-'''python manage.py runserver'''
+```python manage.py runserver```
 
-'''POST http://127.0.0.1:8000/shorten/
+then test with curl
+
+```POST http://127.0.0.1:8000/shorten/
 Content-Type: application/json
 
 {
   "url": "https://www.google.com"
 }
-'''
+```
 
 This should return a shortened url
