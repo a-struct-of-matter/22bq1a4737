@@ -2,6 +2,7 @@ import logging
 from functools import wraps
 from datetime import datetime
 
+
 # Configure logging
 logging.basicConfig(
     filename='app.log',
@@ -22,11 +23,6 @@ def log_middleware(func):
             raise
     return wrapper
 
-# Example usage:
 @log_middleware
 def example_function(x, y):
     return x / y
-
-# Uncomment below lines to test
-# example_function(10, 2)
-# example_function(10, 0)

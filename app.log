@@ -1,0 +1,14 @@
+2025-08-01 05:26:26,571 INFO Called example_function with args=(10, 2), kwargs={}
+2025-08-01 05:26:26,571 INFO example_function succeeded with result=5.0
+2025-08-01 05:26:48,942 INFO Called example_function with args=(10, 2), kwargs={}
+2025-08-01 05:26:48,942 INFO example_function succeeded with result=5.0
+2025-08-01 05:26:48,942 INFO Called example_function with args=(10, 0), kwargs={}
+2025-08-01 05:26:48,942 ERROR example_function failed with error: division by zero
+Traceback (most recent call last):
+  File "/workspaces/22bq1a4737/Logging middleware/good.py", line 18, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/22bq1a4737/Logging middleware/good.py", line 28, in example_function
+    return x / y
+           ~~^~~
+ZeroDivisionError: division by zero
