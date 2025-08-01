@@ -9,11 +9,11 @@ type Package = BackendPackage | FrontendPackage;
 const LOGGING_API_URL = 'http://20.244.56.144/evaluation-service/logs';
 
 /**
- * Log function to send structured logs to the AffordMed evaluation server.
- * @param stack - 'backend' or 'frontend'
- * @param level - 'debug', 'info', 'warn', 'error', 'fatal'
- * @param pkg - specific package/module name
- * @param message - descriptive log message
+ * Log function to send structured logs to theserver.
+ * @param stack 
+ * @param level 
+ * @param pkg 
+ * @param message
  */
 export async function Log(stack: Stack, level: Level, pkg: Package, message: string): Promise<void> {
     // Validation
