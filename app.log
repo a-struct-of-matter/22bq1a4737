@@ -12,3 +12,35 @@ Traceback (most recent call last):
     return x / y
            ~~^~~
 ZeroDivisionError: division by zero
+2025-08-01 06:02:27,186 INFO Called shorten_url with args=('https://example.com',), kwargs={}
+2025-08-01 06:02:27,186 INFO shorten_url succeeded with result=short.ly/abc123
+2025-08-01 06:02:27,186 INFO Called shorten_url with args=(123,), kwargs={}
+2025-08-01 06:02:27,187 ERROR TypeError in shorten_url: URL must be a string
+Traceback (most recent call last):
+  File "/workspaces/22bq1a4737/Logging middleware/middleware.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/22bq1a4737/Logging middleware/middleware.py", line 42, in shorten_url
+    raise TypeError("URL must be a string")
+TypeError: URL must be a string
+2025-08-01 06:02:27,189 ERROR Database connection error: Could not connect to DB
+Traceback (most recent call last):
+  File "/workspaces/22bq1a4737/Logging middleware/middleware.py", line 52, in connect_to_db
+    raise ConnectionError("Could not connect to DB")
+ConnectionError: Could not connect to DB
+2025-08-01 06:03:01,869 INFO Called shorten_url with args=('https://example.com',), kwargs={}
+2025-08-01 06:03:01,869 INFO shorten_url succeeded with result=short.ly/abc123
+2025-08-01 06:03:01,869 INFO Called shorten_url with args=(123,), kwargs={}
+2025-08-01 06:03:01,869 ERROR TypeError in shorten_url: URL must be a string
+Traceback (most recent call last):
+  File "/workspaces/22bq1a4737/Logging middleware/middleware.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/22bq1a4737/Logging middleware/middleware.py", line 42, in shorten_url
+    raise TypeError("URL must be a string")
+TypeError: URL must be a string
+2025-08-01 06:03:01,872 ERROR Database connection error: Could not connect to DB
+Traceback (most recent call last):
+  File "/workspaces/22bq1a4737/Logging middleware/middleware.py", line 52, in connect_to_db
+    raise ConnectionError("Could not connect to DB")
+ConnectionError: Could not connect to DB
