@@ -11,7 +11,8 @@ To Test the app you can use curl operations
 
 run django server
 
-```python manage.py runserver```
+```cd urlshortner
+python manage.py runserver```
 
 then test with curl
 
